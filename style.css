@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: rgb(0, 132, 255);
+    padding: 60px 0px 0px 10px;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    height: 100%;
+    width: 0;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+.library {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    gap: 40px;
+}
+
+li {
+    list-style-type: none;
+    background: rgb(210, 200, 140);
+    padding: 20px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: -8px 7px 28px -4px rgba(0, 0, 0, 0.54);
+    display: grid;
+    text-align: center;
+    position: relative;
+}
+
+.trash {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    opacity: 50%;
+}
+
+.trash:hover {
+    cursor: pointer;
+}

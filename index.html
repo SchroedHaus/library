@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="minimize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <label for="title">New Title</label><br>
+            <input type="text" id="title" class="title"><br>
+            <label for="author">Author</label><br>
+            <input type="text" id="author" class="author"><br>
+            <label for="read">Read</label><br>
+            <input type="checkbox" id="read" class="read"><br>
+            <input type="submit" value="add" class="addButton">
+        </div>
+
+        <div class="library" id="library">
+            <button class="openbtn" onclick="openNav()" id="openbtn">☰ Open Sidebar</button>
+            <ul class="bookList">
+
+            </ul>
+        </div>
+
+    </div>
+    
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
