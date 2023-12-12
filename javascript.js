@@ -1,12 +1,13 @@
 const myLibrary = [];
 
 // Create the new Book object
-function Book(newBookTitle, newBookAuthor, newBookRead) {
-  // the constructor...
-  this.title = newBookTitle;
-  this.author = newBookAuthor;
-  this.read = newBookRead;
+class Book {
+  constructor(newBookTitle, newBookAuthor, newBookRead) {
+    this.title = newBookTitle;
+    this.author = newBookAuthor;
+    this.read = newBookRead;
   }
+}
 
 // // Add the new book object to the array
 function addBookToLibrary(newBook) {
